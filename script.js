@@ -11,7 +11,7 @@ const fileInput = document.getElementById('fileInput');
     formData.append('image_file', image);
     formData.append('size', 'auto');
 
-    const apiKey = "CnbjLASYDARPreTpJgDuRdo1";
+    const apiKey = "J69X9JzVCVdUiwJ7itfLKZqt";
 
     fetch('https://api.remove.bg/v1.0/removebg',{
         method:'POST',
