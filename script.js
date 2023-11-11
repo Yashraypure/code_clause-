@@ -2,6 +2,7 @@ let imageURL;
 
 function submitHandler(){
     console.log("click");
+     document.getElementById("waitMessage").style.display = "block";
 const fileInput = document.getElementById('fileInput');
     console.log(fileInput.files);
     const image = fileInput.files[0];
@@ -31,7 +32,11 @@ const fileInput = document.getElementById('fileInput');
             img.src = url;
             document.body.appendChild(img);
     })
-    .catch();
+    .catch()
+    .finally(function() {
+        // Hide the "Wait for a second..." message after processing
+        document.getElementById("waitMessage").style.display = "none";
+    });
 }
 
 function downloadFile(){
