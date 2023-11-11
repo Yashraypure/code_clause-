@@ -42,7 +42,7 @@ const fileInput = document.getElementById('fileInput');
 function downloadFile(){
 var a = document.createElement('a'); //<a></a>
     a.href = imageURL;
-    a.download = 'naciasv.png';
+    a.download = 'Yourhoneymoon.png';
     document.body.appendChild(a);
 
     a.click();
